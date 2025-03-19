@@ -7,3 +7,11 @@ export async function createPost(formData: FormData) {
 }
 
 export async function deletePost(formData: FormData) { }
+
+
+let likes = 0 // Simulating database storage
+
+export async function incrementLike() {
+  likes += 1
+  return likes
+}
